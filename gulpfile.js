@@ -40,9 +40,9 @@ gulp.task('sass', function () {
 
 /*------Sprites------------*/
 gulp.task('sprite', function (cb) {
-    const spriteData = gulp.src('source/img/icons/*.png').pipe(spritesmith({
+    const spriteData = gulp.src('source/image/icons/*.png').pipe(spritesmith({
         imgName: 'sprite.png',
-        imgPath:'../img/spite.png',
+        imgPath:'../images/sprite.png',
         cssName: 'sprite.scss'
     }));
      spriteData.img.pipe(gulp.dest('build/images'));
@@ -63,7 +63,7 @@ gulp.task('copy:fonts', function () {
 });
 /*------Copy Images-------*/
 gulp.task('copy:images',function () {
-    return gulp.src('./source/img/**/*')
+    return gulp.src('./source/images/**/*')
         .pipe(gulp.dest('build/images'));
 });
 /*--------Copy--------*/

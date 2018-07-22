@@ -1,3 +1,16 @@
-body {
-  background: black;
-}
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+@import "../../node_modules/normalize.scss/normalize";
+
+
+@import "global/var.scss";
+@import "global/fonts.scss";
+@import "global/common.scss";
+
+@import "global/mixin";
+@import "global/base";
+@import "global/sprite";
+@import "global/button";
+
+
+@import "sections/header";
+@import "sections/nav";
